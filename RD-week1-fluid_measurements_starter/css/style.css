@@ -1,7 +1,11 @@
 
 main {
-		width: 940px;
+		width: 95%;
 		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
 	}
 
 
@@ -17,7 +21,7 @@ body {
 }
 	
 h1 {
-	font-size: 64px;
+	font-size: 3.5em;
 	margin: 0;
 	padding: 0;
 }
@@ -25,10 +29,20 @@ h1 {
 h1, h2{
 	text-align: center;
 	text-transform: uppercase;
+	color: rebeccapurple;
 }
 
+header {
+	background-color: chartreuse;
+}
 
  .column {
 		width:300px;
 		display: inline-block;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
