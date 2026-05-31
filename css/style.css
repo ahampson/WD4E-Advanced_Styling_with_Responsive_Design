@@ -65,6 +65,24 @@ section{
     margin: 0 auto;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.photo{
+    width: 100vw;
+}
+
+img {
+    width: 90vw;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media all and (min-width: 600px) {
     body{
         background-color: antiquewhite;
@@ -83,5 +101,15 @@ section{
     section{
         display: inline-block; 
         width: 70vw;
+    }
+
+    .gallery {
+        grid-template-columns: 45vw 45vw;
+        grid-gap: 1rem;
+        padding: 1rem;
+        justify-content: space-evenly;
+    }
+    img {
+        width: 45vw;
     }
 }
