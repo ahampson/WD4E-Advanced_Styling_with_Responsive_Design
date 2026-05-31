@@ -1,84 +1,87 @@
-main{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-wrap: wrap;
+html{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-section {
-    border-radius: 5%;
-    border-color: gray;
-    border-style: inset;
-    display: inline-block;
-    padding: 2%;
-    background-color: azure;
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
-table{
-    border: 1px solid black;
-    text-align: center;
-    border-collapse:collapse;
-    border-spacing:0;
-}
-th{
-    border-color:black;
-    border-style:solid;
-    border-width:1px;
-    font-family:Arial, sans-serif;
-    font-size:18px;
-    overflow:hidden;
-    padding:10px 15px;
-    word-break:normal;
-    background-color: black;
-    color: white;
-}
-tr {
-    background-color: bisque;
-}
-td {
-    border-color:black;
-    border-style:solid;
-    border-width:1px;
-    font-family:Arial, sans-serif;
-    font-size:14px;
-    overflow:hidden;
-    padding:10px 5px;
-    word-break:normal;
-}
+
 nav {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-nav ul {
-    list-style: none;
-}
-a.navbar{
-    text-decoration: none;
-    border-color: rebeccapurple;
-    border-radius: 25px;
-    border-width: 1px;
-    border-style: outset;
-    padding: 5%;
-    margin-top: 2%;
-    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    transition: color 0.5s, background-color 0.5s;
-}
-a.navbar:hover{
-    background-color: rebeccapurple;
-    color: white;
-}
-a.navbar:active{
-    background-color: rebeccapurple;
-    color: white;
+    border-width: 1vw;
+    border-style: outset;
+    border-color: black;
 }
 
-.offpage {
-  position: absolute;
-  left: -1000px;
-  display: block;
-  margin-bottom: 20px;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1vh;
+    margin: 2vw 1rem;
+    font-size: 1.2rem;
+    display: inline-block;
 }
 
-.offpage:focus {
-  position: static;
-  line-height: normal ;
+nav a:hover, nav a:focus {
+    color: yellow;
+    border: 0.5vh solid yellow;
+    border-radius: 2vh;
+    background-color: gray;
+    padding: 0.5vh;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: xx-small;
+    line-height: 0px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 0rem;
+    padding-top: 1rem;
+}
+
+section{
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 600px) {
+    body{
+        background-color: antiquewhite;
+    }
+
+    nav {
+        width: 20vw;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    section{
+        display: inline-block; 
+        width: 70vw;
+    }
 }

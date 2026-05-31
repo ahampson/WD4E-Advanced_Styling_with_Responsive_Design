@@ -3,20 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="css/gallery.css">
-	<script src = "js/gallery.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
-	<img class = "preview" alt = "The joy of success" src = "img/all_done.png" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	<img class = "preview" alt = "Are you still there?" src = "img/AreYouStillThere.png" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	<img class = "preview" alt = "Don't drink the cool-aid" src = "img/BadRequest.png" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	<img class = "preview" alt = "Tis but a scratch!" src = "img/Broken.png" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	<img class = "preview" alt = "No more bugs in the code" src = "img/BUGS.png" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	<img class = "preview" alt = "To boldly go, into the unknown..." src = "img/unknown.png" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	<script>addListeners()</script>
-	<!-- This Page was created for Interactivity with JavaScript: Final Project (April 2026)-->
+	<nav>
+		<a class="active" href="#">Home</a>
+		<a href="#">Gallery</a>
+		<a href="#">Contact</a>
+	</nav>
+	<section id="main">
+		<h1>About this page</h1>
+		<p>This is a simple photo gallery page. This page was created for a Coursea Course in responsive web design. the intent is for this page to have a different look if you view this page on a mobile device.</p>
+		<p>To view the mobile version of this page, you can resize your browser window to be narrower than 600 pixels, or you can view this page on a mobile device such as a smartphone or tablet.</p>
+	</section>
+	<footer>
+		<p>Hampstar's 2026 Photo Gallery. All rights reserved.</p>
+	</footer>
 </body>
 </html>
