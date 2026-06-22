@@ -22,6 +22,9 @@ function addListeners() {
     console.log('[+] Adding Tab Index for all photos')
     const previews = document.querySelectorAll('.photo');
     previews.forEach(function(preview) {
+        preview.addEventListener('mouseover', function() {
+            upDate(preview);
+        });
         preview.addEventListener('focus', function() {
             upDate(preview);
         });
