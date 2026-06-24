@@ -1,5 +1,6 @@
 body {
     background-color: #dedede;
+    font-family:'Courier New', Courier, monospace;
 }
 
 h1 {
@@ -21,16 +22,16 @@ p {
 
 img{
   width:100%;
+  border: 2px solid black;
 }
-
 
 p{
   text-align:center;
 }
 
 div img{
-    width:150px;
-    height: 150px;
+    width:200px;
+    height: 200px;
     display:block;
     margin:auto;
 }
@@ -42,15 +43,68 @@ div{
   padding: 2px;
 }
 
+figcaption {
+    text-align: center;
+}
 
+.grid {
+    display:grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    width: 100%
+}
 
+@media all and (min-width: 772px){
+    body {
+        background-color:antiquewhite;
+    }
 
+    .grid {
+        grid-template-columns: 50% 50%;
+    }
 
+    figure img{
+        border-radius: 50%;
+    }
 
+    figure.last {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
 
+@media all and (min-width: 992px){
+    body {
+        background-color:burlywood;
+    }
 
+    figure img{
+        border-radius: 0%;
+    }
 
+    figure:nth-child(3n){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
 
+@media all and (prefers-reduced-motion: reduce){
+    html {
+        scroll-behavior: smooth ;
+    }
+}
+
+@media all and (prefers-color-scheme: dark){
+    html {
+        scroll-behavior: smooth ;
+    }
+    
+    figure {
+        background-color:dimgrey ;
+        color: gold;
+        border-color: #000;
+    }
+}
 
 
 
