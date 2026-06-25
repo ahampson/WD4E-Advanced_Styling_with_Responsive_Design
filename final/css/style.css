@@ -13,6 +13,8 @@ a {
     color: #000;
     text-decoration: none;
     font-family:Arial, sans-serif;
+    padding: 10px 15px;
+    border-radius: 25px;
 }
 
 p {
@@ -88,24 +90,72 @@ figcaption {
     }
 }
 
+@media all and (min-width: 1200px) {
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        align-self: center;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    header{
+        display: block;
+        align-content: center;
+    }
+
+    main {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: block;
+    }
+
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
 @media all and (prefers-reduced-motion: reduce){
     html {
         scroll-behavior: smooth ;
     }
 }
 
-@media all and (prefers-color-scheme: dark){
-    html {
-        scroll-behavior: smooth ;
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;   
+        color: #e8e8e8;
     }
     
     figure {
-        background-color:dimgrey ;
-        color: gold;
-        border-color: #000;
+        background-color: #2b2b2b; 
+        color: #f5d97a;              
+        border: 2px solid #444;      
+    }
+
+    figure figcaption {
+        color: #e6e6e6;              
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-family:Arial, sans-serif;
+    }
+
+    a:hover, a:active {
+        background-color: #fff;
+        color: #000;
     }
 }
-
 
 
 
